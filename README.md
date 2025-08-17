@@ -1,73 +1,40 @@
-# Welcome to your Lovable project
+AI Meeting Notes Summarizer & Sharer
 
-## Project info
+Approach & Process
 
-**URL**: https://lovable.dev/projects/6738c540-b98f-4fc8-b9a3-c05b84fa6ec5
+Goal: Allow users to upload meeting transcripts, provide a custom prompt (e.g., “Highlight action items”), generate an editable summary, and share via email.
 
-## How can I edit this code?
+Steps Taken:
 
-There are several ways of editing your application.
+Built a minimal React + Vite frontend to handle transcript upload, prompt input, and displaying/editing summaries.
 
-**Use Lovable**
+Implemented a backend API using Node.js/Express to process requests.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/6738c540-b98f-4fc8-b9a3-c05b84fa6ec5) and start prompting.
+Integrated Groq API for fast LLM summarization with custom instructions.
 
-Changes made via Lovable will be committed automatically to this repo.
+Added email delivery using a transactional email service (e.g., Nodemailer with SMTP).
 
-**Use your preferred IDE**
+Deployed to Netlify for easy hosting and quick iterations.
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+Testing: Verified uploads, prompt handling, summary editing, and email sending end-to-end.
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+Tech Stack
 
-Follow these steps:
+Frontend: React, Vite, TypeScript, Tailwind CSS (minimal UI with shadcn-ui)
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+Backend: Node.js, Express
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+AI Service: Groq API (can be swapped with OpenAI if needed)
 
-# Step 3: Install the necessary dependencies.
-npm i
+Email: Nodemailer (SMTP)
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+Deployment: Netlify
 
-**Edit a file directly in GitHub**
+Deployed Link
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+https://legendary-cactus-841d22.netlify.app
 
-**Use GitHub Codespaces**
+Repository
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+https://github.com/ankitmrj/groq-summary-genie
 
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/6738c540-b98f-4fc8-b9a3-c05b84fa6ec5) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
