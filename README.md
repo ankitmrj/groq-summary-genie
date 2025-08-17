@@ -1,40 +1,47 @@
-AI Meeting Notes Summarizer & Sharer
+# AI Meeting Notes Summarizer & Sharer
 
-Approach & Process
+Transform your raw meeting transcripts into **clean, editable summaries** — then share them instantly via email.
 
-Goal: Allow users to upload meeting transcripts, provide a custom prompt (e.g., “Highlight action items”), generate an editable summary, and share via email.
+---
 
-Steps Taken:
+## 📌 Approach & Process
 
-Built a minimal React + Vite frontend to handle transcript upload, prompt input, and displaying/editing summaries.
+1. **Objective:** Upload a transcript → Add a custom prompt (e.g., *“Highlight action items”*) → Generate a polished summary → Edit → Share via email.
+2. **Development Workflow:**
 
-Implemented a backend API using Node.js/Express to process requests.
+   * **Frontend:** Simple React + Vite interface for upload, prompt input, summary display & editing.
+   * **Backend:** Node.js/Express API to handle summarization and email delivery.
+   * **AI:** Groq API for blazing‑fast, instruction‑driven summarization.
+   * **Email:** SMTP via Nodemailer to send summaries directly to recipients.
+   * **Deployment:** Hosted on Netlify for smooth updates.
+3. **Testing:** Verified end‑to‑end — uploads, prompt handling, editable summaries, email sharing.
 
-Integrated Groq API for fast LLM summarization with custom instructions.
+---
 
-Added email delivery using a transactional email service (e.g., Nodemailer with SMTP).
+##  Tech Stack
 
-Deployed to Netlify for easy hosting and quick iterations.
+* **Frontend:** React • Vite • TypeScript • Tailwind CSS • shadcn‑ui
+* **Backend:** Node.js • Express
+* **AI Service:** Groq API *(swap‑ready with OpenAI)*
+* **Email Delivery:** Nodemailer (SMTP)
+* **Deployment:** Netlify
 
-Testing: Verified uploads, prompt handling, summary editing, and email sending end-to-end.
+---
 
-Tech Stack
+##  Live Demo
 
-Frontend: React, Vite, TypeScript, Tailwind CSS (minimal UI with shadcn-ui)
+[**▶ Open Deployed App**](https://legendary-cactus-841d22.netlify.app)
 
-Backend: Node.js, Express
+---
 
-AI Service: Groq API (can be swapped with OpenAI if needed)
+##  Repository
 
-Email: Nodemailer (SMTP)
+[**GitHub – groq-summary-genie**](https://github.com/ankitmrj/groq-summary-genie)
 
-Deployment: Netlify
+---
+##  Screensort of Email Recieved
 
-Deployed Link
+<img width="1919" height="831" alt="image" src="https://github.com/user-attachments/assets/b5978e04-d29e-4be0-9df3-92345611ee44" />
 
-https://legendary-cactus-841d22.netlify.app
 
-Repository
-
-https://github.com/ankitmrj/groq-summary-genie
-
+---
